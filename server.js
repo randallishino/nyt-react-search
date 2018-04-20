@@ -16,7 +16,7 @@ app.use(express.static("client/build"));
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
-mongoose.connect(
+const db = mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/nytreact",
   {
     useMongoClient: true
