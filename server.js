@@ -1,7 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-var logger = require('morgan');
+const logger = require('morgan');
+const dotenv = require('dotenv');
+
 // const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3000;
