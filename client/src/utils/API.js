@@ -5,6 +5,8 @@ const api = {
     // search nyt api
     search: function(searchTerm,startYear,endYear) {
         const apiKey = process.env.API_KEY;
+
+        // practicing es6 template literals, need to test still
         const queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${apiKey}&q=${searchTerm}&begin_date=${startYear}0101&end_date${endYear}0101`;
         console.log(queryURL);
 

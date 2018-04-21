@@ -10,7 +10,10 @@ const Nav = () =>
           <span className="icon-bar" />
         </button>
         <a href="/" className="navbar-brand">
-          Ny Times Articles
+          NY Times Articles
+        </a>
+        <a href="/api/saved" className="navbar-brand">
+          Saved Articles
         </a>
       </div>
     </div>
